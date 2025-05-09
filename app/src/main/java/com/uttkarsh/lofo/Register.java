@@ -76,11 +76,11 @@ public class Register extends AppCompatActivity {
                 String phone = signupPhone.getText().toString();
                 String password = signupPassword.getText().toString();
 
-                if (!email.endsWith("@cumminscollege.in")) {
-                    // Email format is incorrect
-                    Toast.makeText(Register.this, "Please sign up with @cumminscollege.in email.", Toast.LENGTH_SHORT).show();
-                    return; // Exit the method, preventing further execution
-                }
+                // if (!email.endsWith("@cumminscollege.in")) {
+                //     // Email format is incorrect
+                //     Toast.makeText(Register.this, "Please sign up with @cumminscollege.in email.", Toast.LENGTH_SHORT).show();
+                //     return; // Exit the method, preventing further execution
+                // }
 
                 FirebaseAuth mAuth = FirebaseAuth.getInstance();
                 mAuth.createUserWithEmailAndPassword(email, password)
